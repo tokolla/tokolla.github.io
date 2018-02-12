@@ -1,8 +1,9 @@
 @media screen and (min-width: 841px) {
 
 body {
+  max-width: 1100px;
   margin: 0 auto !important;
-  font-family: "Hammersmith One", sans-serif;
+  font-family: sans-serif;
   background-color: rgb(237, 237, 237);
 }
 
@@ -10,8 +11,9 @@ a{
   text-decoration: none;
 }
 
-h1{
+h1, h1 a{
   text-align: center;
+  font-family: "Hammersmith One", sans-serif;
   color: rgb(61, 61, 61);
   font-weight:normal;
   font-size: 26px;
@@ -37,22 +39,24 @@ header li{
   padding: 0.8% 2%;
   font-size: 11px;
   letter-spacing: 1.5px;
-  font-weight: 600;
+  font-weight: 700;
   font-family: Montserrat, sans-serif;
+  color: rgb(13, 169, 217);
+
 }
 
 header li a{
   color: rgb(122, 122, 122);
 }
 
-
 header li a:hover{
   color: rgb(16, 212, 230);
+  transition: 0.3s;
 }
 
 main{
   width: 90%;
-  margin: 42px auto;
+  margin: 46px auto;
 }
 
 .flex_container{
@@ -85,8 +89,93 @@ main{
 
 .samnail:hover h3{
   color: rgb(16, 214, 228);
+  transition: 0.3s;
+}
+
+p{
+  color: rgb(122, 122, 122);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  font-weight: normal;
+  -webkit-margin-before: 0em;
 }
 
 
+
+/* about page */
+
+#about{
+  width: 84%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pro_picture{
+  width: 34%;
+  height: auto;
+  max-height: 100%;
+  align-self: flex-start;
+  max-width: 360px;
+  
+}
+
+#about h2{
+  margin-top: 60px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  color: rgb(122, 122, 122);
+}
+
+form{
+  font-family: "Open Sans", sans-serif;
+  color: rgb(122, 122, 122);
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-left: 0px;
+}
+
+form>div{
+  margin-top: 20px;
+}
+
+label{
+  margin-left: 2px;
+}
+
+#msg{
+  height: 6.4em;
+}
+
+#name, #mail, #msg{
+  margin-top: 6px;
+  width: 100%;
+  padding: 10px 8px;
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+}
+
+form .button{
+  margin-top: 30px;
+}
+
+form .button button{
+  display: block;
+  margin:0 auto;
+  background-color: rgb(145, 161, 166);
+  border-radius: 3px;
+  color: #FFF;
+  padding: 10px 4% 8px 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+form .button button:hover{
+  opacity: 0.8;
+}
 
 }
