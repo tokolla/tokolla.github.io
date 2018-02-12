@@ -42,7 +42,6 @@ header li{
   font-weight: 700;
   font-family: Montserrat, sans-serif;
   color: rgb(13, 169, 217);
-
 }
 
 header li a{
@@ -69,7 +68,6 @@ main{
 .samnail{
   margin:0 0.8%;
 }
-
 
 
 .samnail img{
@@ -102,6 +100,20 @@ p{
   -webkit-margin-before: 0em;
 }
 
+/* coding page */
+
+.samnail_center{
+  display: inline-block;
+  margin-left: 5.6%;
+  overflow:hidden;
+}
+
+#coding .samnail{
+  float: left;
+  width: 17.4%;
+  margin: 1.2% 0 6px 1.2%;
+}
+
 
 
 /* about page */
@@ -119,7 +131,6 @@ p{
   max-height: 100%;
   align-self: flex-start;
   max-width: 360px;
-  
 }
 
 #about h2{
@@ -177,5 +188,7 @@ form .button button{
 form .button button:hover{
   opacity: 0.8;
 }
+
+
 
 }
