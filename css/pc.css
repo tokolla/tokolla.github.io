@@ -53,6 +53,10 @@ header li a:hover{
   transition: 0.3s;
 }
 
+header li a.page_now{
+  color: rgb(13, 169, 217);
+}
+
 main{
   width: 90%;
   margin: 46px auto;
@@ -100,7 +104,7 @@ p{
   -webkit-margin-before: 0em;
 }
 
-/* coding page */
+/* coding page, photography page, design page*/
 
 .samnail_center{
   display: inline-block;
@@ -108,12 +112,39 @@ p{
   overflow:hidden;
 }
 
+
+/* design page */
+
+
+#design .samnail{
+  float: left;
+  width: 22%;
+  margin: 1.2% 0 2px 1.2%;
+}
+
+
+#design .samnail h3{
+  min-height: 28px;
+  line-height: 1.3em;
+}
+
+/* coding page */
+
 #coding .samnail{
   float: left;
   width: 17.4%;
   margin: 1.2% 0 6px 1.2%;
 }
 
+
+/* photography page */
+
+
+#photography .samnail{
+  float: left;
+  width: 22%;
+  margin: 1.2% 0 6px 1.2%;
+}
 
 
 /* about page */
@@ -178,16 +209,20 @@ form .button button{
   display: block;
   margin:0 auto;
   background-color: rgb(145, 161, 166);
-  border-radius: 3px;
+  border-radius: 0px;
   color: #FFF;
   padding: 10px 4% 8px 4%;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-family: "Hammersmith One", sans-serif;
 }
 
 form .button button:hover{
   opacity: 0.8;
+  transition: 0.3s;
 }
+
+
 
 
 
