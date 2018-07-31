@@ -11,6 +11,95 @@ a{
   text-decoration: none;
 }
 
+
+.back_arrow{
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 13px;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.back_arrow::before,
+.back_arrow::after{
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.back_arrow::before{
+  left: 3px;
+  width: 8px;
+  height: 1px;
+  background: rgb(122, 122, 122);
+}
+
+.back_arrow::after{
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid rgb(122, 122, 122);
+  border-left: 1px solid rgb(122, 122, 122);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+a .back_arrow {
+  color: rgb(122, 122, 122);
+}
+
+a .back_arrow:hover{
+  color: #02BCD3;
+  border-color: #02BCD3;
+}
+
+a .back_arrow:hover::before{
+  background: #02BCD3;
+}
+
+
+a .back_arrow:hover::after{
+  border-top: 1px solid #02BCD3;
+  border-left: 1px solid #02BCD3;
+}
+
+.back_arrow:hover::before,
+.back_arrow:hover::after{
+  left: -0.03em;
+}
+
+
+
+.margin_bottom15{
+  margin-bottom: 15px;
+}
+
+.margin_bottom6{
+  margin-bottom: 6px;
+}
+
+.margin_top20 {
+  margin-top: 20px;
+}
+
+.margin_top60{
+  margin-top: 60px;
+}
+
+.margin_right20{
+  margin-right: 20px;
+}
+
+.float_clear{
+  overflow: hidden;
+}
+
 h1, h1 a{
   text-align: center;
   font-family: "Hammersmith One", sans-serif;
@@ -20,6 +109,20 @@ h1, h1 a{
   letter-spacing: 2px;
   margin-top: 0.8em;
   margin-bottom: 0.9em;
+}
+
+h2{
+  -webkit-margin-before: 0.4em;
+  -webkit-margin-after: 0.4em;
+  margin-before: 0.4em;
+  margin-after: 0.4em;
+}
+
+h4{
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  margin-before: 1em;
+  margin-after: 1em;
 }
 
 
@@ -66,7 +169,6 @@ main{
   display: flex;
   width: 86%;
   margin: 0px auto;
-
 }
 
 .samnail{
@@ -94,9 +196,18 @@ main{
   transition: 0.3s;
 }
 
+h2.subtitle{
+  font-family: Montserrat, sans-serif;
+  color: rgb(13, 169, 217);
+  margin-left: 6.8%;
+  font-size: 11px;
+  font-weight: 700;
+}
+
 p{
-  color: rgb(122, 122, 122);
-  font-size: 13px;
+  /*color: rgb(122, 122, 122);*/
+  color: #544659;
+  font-size: 1em;
   font-family: "Open Sans", sans-serif;
   line-height: 28px;
   letter-spacing: 0.25px;
@@ -128,6 +239,50 @@ p{
   line-height: 1.3em;
 }
 
+/* design detail page */
+
+.detail_left{
+  position: relative;
+  display: block;
+  width: 500px;
+  float: left;
+}
+
+#design_detail .detail_right{
+  color: #544659;
+}
+
+.bg_gray{
+  background-color: #6D6570;
+  padding:0px 8px;
+  color: #FFFFFF;
+  margin-right: 8px;
+  line-height: 2em;
+  font-weight: 300;
+  font-size: 0.9em;
+  letter-spacing:0.1em;
+  font-family: "Open Sans", sans-serif;
+  word-break: break-word;
+  float: left;
+}
+
+#design_detail h2, #design_detail h4{
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+#design_detail h4{
+  font-size: 1em;
+}
+
+#design_detail h4 span{
+  text-transform:none;
+  margin-left: 5px;
+}
+
+
+
 /* coding page */
 
 #coding .samnail{
@@ -135,6 +290,9 @@ p{
   width: 17.4%;
   margin: 1.2% 0 6px 1.2%;
 }
+
+
+
 
 
 /* photography page */

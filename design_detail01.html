@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta name="description" content="">
+<meta name="Keywords" content="" />
+<meta charset="UTF-8" />
+<link < rel="stylesheet" href="css/slider-pro.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" media="all" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" media="all" type="text/css" href="css/pc.css" />
+<link rel="stylesheet" media="all" type="text/css" href="css/sp.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
+</head>
+<body>
+<header>
+	<h1>SATOKO TOKORO</h1>
+	<ul>
+		<li><a class="page_now" href="index.html">PORTFOLIO</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+	</ul>
+</header>
+
+
+<main id="design_detail">
+	<div class="detail_left margin_right20">
+		<div class="slider-pro" id="slider1">
+			<div class="sp-slides">
+	        	<!-- Slide 1 -->
+	        	<div class="sp-slide">
+	            	<img class="sp-image" src="img/design_detail01_01.png"/>
+	        	</div>
+	        	<!-- Slide 2 -->
+	        	<div class="sp-slide">
+	            	<img class="sp-image" src="img/design_detail01_02.png"/>
+	        	</div>
+	    	</div>
+	    </div>
+    </div>
+    <div class="detail_right">
+    	<h2>FRYER A4-size</h2>
+    	<div class="margin_bottom15 float_clear">
+    		<span class="bg_gray margin_bottom6">Adobe Illustrator</span><span class="bg_gray margin_bottom10">Adobe Photoshop</span>
+    	</div>
+    	<h4>client:<span>Tokyo C.R.C.</span></h4>
+    	<h4>date:<span>Dec 2016</span></h4>
+    	<p class="margin_top20">Camper rental App.
+		By using this App, you can find the camper wich matches your ideal conditions and book the camper. </p>
+		<a href="design.html"><p class="back_arrow margin_top60">back</p></a>
+
+    </div>
+
+</main>
+
+<script type="text/javascript">
+	jQuery( document ).ready(function( $ ) {
+		$( '#slider1' ).sliderPro({
+	    width: 500,//横幅
+	    height:480,
+	    arrows: true,//左右の矢印
+	    buttons: true,//ナビゲーションボタン
+	    slideDistance:0,//スライド同士の距離
+	    autoplay: false,
+	    touchSwipe:false,
+	    breakpoints: {
+        840: {
+          width: '90%',
+          visibleSize: 'auto',
+          buttons: true,
+          touchSwipe:true,
+        	}
+        }
+	 	});
+	 });
+</script>
+
+
+</body>
+</html>
